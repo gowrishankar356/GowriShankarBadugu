@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <div className="h-screen w-screen bg-black">{children}</div>
+          <div className="h-screen w-screen bg-black box-border overflow-hidden">
+            {children}
+          </div>
         </Providers>
       </body>
     </html>
